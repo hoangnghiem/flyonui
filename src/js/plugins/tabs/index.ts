@@ -150,7 +150,7 @@ class HSTabs extends HSBasePlugin<{}> implements ITabs {
       window.$hsTabsCollection = window.$hsTabsCollection.filter(({ element }) => document.contains(element.el))
 
     document
-      .querySelectorAll('[role="tablist"]:not(select):not(.--prevent-on-load-init)')
+      .querySelectorAll('.tablist:not(select):not(.--prevent-on-load-init)')
       .forEach((el: HTMLElement) => {
         if (!window.$hsTabsCollection.find(elC => (elC?.element?.el as HTMLElement) === el)) new HSTabs(el)
       })
@@ -173,7 +173,7 @@ class HSTabs extends HSBasePlugin<{}> implements ITabs {
     const target = document.querySelector('[data-tab]:focus')
 
     if (target && TABS_ACCESSIBILITY_KEY_SET.includes(evt.code) && !evt.metaKey) {
-      const isVertical = target.closest('[role="tablist"]').getAttribute('data-tabs-vertical')
+      const isVertical = target.closest('.tablist').getAttribute('data-tabs-vertical')
 
       evt.preventDefault()
 
@@ -197,7 +197,7 @@ class HSTabs extends HSBasePlugin<{}> implements ITabs {
   }
 
   static onArrow(isOpposite = true) {
-    const target = document.querySelector('[data-tab]:focus').closest('[role="tablist"]')
+    const target = document.querySelector('[data-tab]:focus').closest('.tablist')
     const targetInCollection = window.$hsTabsCollection.find(el => el.element.el === target)
 
     if (targetInCollection) {
@@ -214,7 +214,7 @@ class HSTabs extends HSBasePlugin<{}> implements ITabs {
   }
 
   static onStartEnd(isOpposite = true) {
-    const target = document.querySelector('[data-tab]:focus').closest('[role="tablist"]')
+    const target = document.querySelector('[data-tab]:focus').closest('.tablist')
     const targetInCollection = window.$hsTabsCollection.find(el => el.element.el === target)
 
     if (targetInCollection) {
