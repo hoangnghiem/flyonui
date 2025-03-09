@@ -1,0 +1,13 @@
+.nested-collapse-wrapper .collapse.open.nested-collapse,
+.nested-collapse-wrapper .collapse-toggle.open.nested-collapse {
+
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1))
+}
+
+.nested-collapse-wrapper .collapse.open > .collapse-icon,
+.nested-collapse-wrapper .collapse-toggle.open > .collapse-icon {
+
+    --tw-rotate: 180deg;
+
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}

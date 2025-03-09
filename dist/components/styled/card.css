@@ -1,0 +1,86 @@
+.card {
+  border-radius: var(--rounded-box, 0.5rem);
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.4));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  color: var(--fallback-bc,oklch(var(--bc)/0.8));
+  box-shadow: var(--card-shadow, 0px 2px 4px 0px oklch(var(--bs) / 0.26));
+  border-width: var(--card-border, 0px);
+}
+
+  /* header */
+  .card-header {
+  border-top-left-radius: var(--rounded-box, 0.5rem);
+  border-top-right-radius: var(--rounded-box, 0.5rem);
+    padding: var(--padding-card, 1.5rem);
+}
+  .card-body {
+    padding: var(--padding-card, 1.5rem);
+  }
+  .card-footer {
+  border-bottom-right-radius: var(--rounded-box, 0.5rem);
+  border-bottom-left-radius: var(--rounded-box, 0.5rem);
+    padding: var(--padding-card, 1.5rem);
+}
+  .card :where(figure:first-child) {
+  overflow: hidden;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    border-end-start-radius: unset;
+    border-end-end-radius: unset;
+}
+  .card :where(figure:last-child) {
+  overflow: hidden;
+    border-start-start-radius: unset;
+    border-start-end-radius: unset;
+    border-end-start-radius: inherit;
+    border-end-end-radius: inherit;
+}
+  .card.image-full:before {
+  z-index: 10;
+  border-radius: var(--rounded-box, 0.5rem);
+
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.58) 100%);
+}
+  .card.image-full > .card-body {
+  z-index: 20;
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity, 1)));
+}
+  .card.image-full :where(figure) {
+  overflow: hidden;
+      border-radius: inherit;
+}
+  .card .alert {
+  border-radius: 0px;
+}
+  .card .alert:first-child {
+  border-top-left-radius: var(--rounded-box, 0.5rem);
+  border-top-right-radius: var(--rounded-box, 0.5rem);
+}
+  .card .alert:last-child {
+  border-bottom-right-radius: var(--rounded-box, 0.5rem);
+  border-bottom-left-radius: var(--rounded-box, 0.5rem);
+}
+
+:where(.card-header) + .card-body {
+  padding-top: 0;
+}
+
+:where(.card-body) + .card-footer {
+  padding-top: 0;
+}
+
+.card-group {
+  border-radius: var(--rounded-box, 0.5rem);
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.4));
+  --cd-shadow: var(--fallback-bs,oklch(var(--bs)/0.26));
+  box-shadow: var(--card-shadow, 0px 2px 4px 0px var(--cd-shadow));
+  border-width: var(--card-border, 0px);
+}
+
+.card-group > .card {
+  border-radius: 0px;
+    --card-shadow: none;
+    --card-border: 0;
+}

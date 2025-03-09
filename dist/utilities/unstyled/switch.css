@@ -1,0 +1,15 @@
+[type="checkbox"].switch-xs {
+    --handleoffset: 0.5rem;
+    height: 1rem;
+    width: 1.5rem;
+  }
+  [type="checkbox"].switch-sm {
+    --handleoffset: 0.75rem;
+    height: 1.25rem;
+    width: 2rem;
+  }
+  [type="checkbox"].switch-lg {
+    --handleoffset: 1.95rem;
+    height: 2rem;
+    width: 4rem;
+  }

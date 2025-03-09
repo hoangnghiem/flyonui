@@ -1,0 +1,500 @@
+.switch {
+  --tglbg: var(--fallback-b3,oklch(var(--b3)/1));
+  --handleoffset: 1.35rem;
+  --handleoffsetcalculator: calc(var(--handleoffset) * -1);
+  --switchhandleborder: 0 0;
+  height: 1.5rem;
+  width: 2.875rem;
+  cursor: pointer;
+  appearance: none;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: var(--fallback-b1,oklch(var(--b1)/1));
+
+  transition:
+    background,
+    box-shadow var(--animation-input, 0.2s) ease-out;
+  box-shadow:
+    var(--handleoffsetcalculator) 0 0 4px var(--tglbg) inset,
+    0 0 0 4px var(--tglbg) inset,
+    var(--switchhandleborder);
+}
+
+  [dir="rtl"] .switch {
+    --handleoffsetcalculator: calc(var(--handleoffset) * 1);
+  }
+
+  .switch:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+  outline-color: var(--fallback-n,oklch(var(--n)/0.3));
+}
+
+  .switch:checked,
+  .switch[checked="true"],
+  .switch[aria-checked="true"] {
+    background-image: none;
+    --handleoffsetcalculator: var(--handleoffset);
+    --tw-text-opacity: 1;
+    color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)));
+  }
+
+  [dir="rtl"] .switch:checked, [dir="rtl"] .switch[checked="true"], [dir="rtl"] .switch[aria-checked="true"] {
+      --handleoffsetcalculator: calc(var(--handleoffset) * -1);
+    }
+
+  .switch:indeterminate {
+  --tw-text-opacity: 1;
+  color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)));
+    box-shadow:
+      calc(var(--handleoffset) / 2) 0 0 3px var(--tglbg) inset,
+      calc(var(--handleoffset) / -2) 0 0 3px var(--tglbg) inset,
+      0 0 0 3px var(--tglbg) inset;
+}
+
+  [dir="rtl"] .switch:indeterminate {
+      box-shadow:
+        calc(var(--handleoffset) / 2) 0 0 3px var(--tglbg) inset,
+        calc(var(--handleoffset) / -2) 0 0 3px var(--tglbg) inset,
+        0 0 0 3px var(--tglbg) inset;
+    }
+
+  .switch-primary:checked,
+    .switch-primary[checked="true"],
+    .switch-primary[aria-checked="true"] {
+      --tglbg: var(--fallback-p,oklch(var(--p)/1));
+    }
+
+  .switch-primary:checked:focus-visible, .switch-primary[checked="true"]:focus-visible, .switch-primary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-p,oklch(var(--p)/0.3));
+}
+
+  .switch-secondary:checked,
+    .switch-secondary[checked="true"],
+    .switch-secondary[aria-checked="true"] {
+      --tglbg: var(--fallback-s,oklch(var(--s)/1));
+    }
+
+  .switch-secondary:checked:focus-visible, .switch-secondary[checked="true"]:focus-visible, .switch-secondary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-s,oklch(var(--s)/0.3));
+}
+
+  .switch-accent:checked,
+    .switch-accent[checked="true"],
+    .switch-accent[aria-checked="true"] {
+      --tglbg: var(--fallback-a,oklch(var(--a)/1));
+    }
+
+  .switch-accent:checked:focus-visible, .switch-accent[checked="true"]:focus-visible, .switch-accent[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-a,oklch(var(--a)/0.3));
+}
+
+  /* State color */
+
+  .switch-info:checked,
+    .switch-info[checked="true"],
+    .switch-info[aria-checked="true"] {
+      --tglbg: var(--fallback-in,oklch(var(--in)/1));
+    }
+
+  .switch-info:checked:focus-visible, .switch-info[checked="true"]:focus-visible, .switch-info[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-in,oklch(var(--in)/0.3));
+}
+
+  .switch-success:checked,
+    .switch-success[checked="true"],
+    .switch-success[aria-checked="true"] {
+      --tglbg: var(--fallback-su,oklch(var(--su)/1));
+    }
+
+  .switch-success:checked:focus-visible, .switch-success[checked="true"]:focus-visible, .switch-success[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3));
+}
+
+  .switch-warning:checked,
+    .switch-warning[checked="true"],
+    .switch-warning[aria-checked="true"] {
+      --tglbg: var(--fallback-wa,oklch(var(--wa)/1));
+    }
+
+  .switch-warning:checked:focus-visible, .switch-warning[checked="true"]:focus-visible, .switch-warning[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-wa,oklch(var(--wa)/0.3));
+}
+
+  .switch-error:checked,
+    .switch-error[checked="true"],
+    .switch-error[aria-checked="true"] {
+      --tglbg: var(--fallback-er,oklch(var(--er)/1));
+    }
+
+  .switch-error:checked:focus-visible, .switch-error[checked="true"]:focus-visible, .switch-error[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3));
+}
+
+  .switch.disabled,
+  .switch:disabled,
+  .switch[disabled] {
+  pointer-events: none;
+  background-color: transparent;
+  opacity: 0.4;
+}
+
+  /* outline  */
+
+  .switch-outline {
+    --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
+
+    box-shadow:
+      var(--handleoffsetcalculator) 0 0 3px var(--tglbg) inset,
+      0 0 0 3px var(--tglbg) inset,
+      var(--switchhandleborder);
+  }
+
+  .switch-outline:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+  outline-color: var(--fallback-n,oklch(var(--n)/0.3));
+}
+
+  .switch-outline:checked,
+    .switch-outline[checked="true"],
+    .switch-outline[aria-checked="true"] {
+      background-image: none;
+      --handleoffsetcalculator: var(--handleoffset);
+    }
+
+  [dir="rtl"] .switch-outline:checked, [dir="rtl"] .switch-outline[checked="true"], [dir="rtl"] .switch-outline[aria-checked="true"] {
+        --handleoffsetcalculator: calc(var(--handleoffset) * -1);
+      }
+
+  .switch-outline.switch-primary:checked,
+      .switch-outline.switch-primary[checked="true"],
+      .switch-outline.switch-primary[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-primary:checked:focus-visible, .switch-outline.switch-primary[checked="true"]:focus-visible, .switch-outline.switch-primary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-p,oklch(var(--p)/0.3));
+}
+
+  .switch-outline.switch-secondary:checked,
+      .switch-outline.switch-secondary[checked="true"],
+      .switch-outline.switch-secondary[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-secondary:checked:focus-visible, .switch-outline.switch-secondary[checked="true"]:focus-visible, .switch-outline.switch-secondary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-s,oklch(var(--s)/0.3));
+}
+
+  .switch-outline.switch-accent:checked,
+      .switch-outline.switch-accent[checked="true"],
+      .switch-outline.switch-accent[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-accent:checked:focus-visible, .switch-outline.switch-accent[checked="true"]:focus-visible, .switch-outline.switch-accent[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-a,oklch(var(--a)/0.3));
+}
+
+  /* State color */
+
+  .switch-outline.switch-info:checked,
+      .switch-outline.switch-info[checked="true"],
+      .switch-outline.switch-info[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-info:checked:focus-visible, .switch-outline.switch-info[checked="true"]:focus-visible, .switch-outline.switch-info[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-in,oklch(var(--in)/0.3));
+}
+
+  .switch-outline.switch-success:checked,
+      .switch-outline.switch-success[checked="true"],
+      .switch-outline.switch-success[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-success:checked:focus-visible, .switch-outline.switch-success[checked="true"]:focus-visible, .switch-outline.switch-success[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3));
+}
+
+  .switch-outline.switch-warning:checked,
+      .switch-outline.switch-warning[checked="true"],
+      .switch-outline.switch-warning[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-warning:checked:focus-visible, .switch-outline.switch-warning[checked="true"]:focus-visible, .switch-outline.switch-warning[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-wa,oklch(var(--wa)/0.3));
+}
+
+  .switch-outline.switch-error:checked,
+      .switch-outline.switch-error[checked="true"],
+      .switch-outline.switch-error[aria-checked="true"] {
+        --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+        --tw-border-opacity: 1;
+        border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+        --tw-bg-opacity: 1;
+        background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+      }
+
+  .switch-outline.switch-error:checked:focus-visible, .switch-outline.switch-error[checked="true"]:focus-visible, .switch-outline.switch-error[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3));
+}
+
+  .switch-outline.disabled,
+    .switch-outline:disabled,
+    .switch-outline[disabled] {
+  pointer-events: none;
+  border-color: currentColor;
+  background-color: transparent;
+  opacity: 0.3;
+      --switchhandleborder: 0 0 0 3px var(--fallback-bc,oklch(var(--bc)/1)) inset,
+        var(--handleoffsetcalculator) 0 0 3px var(--fallback-bc,oklch(var(--bc)/1)) inset;
+}
+
+/* Backward compatibility */
+
+.switch-mark {
+  display: none;
+}
+
+/* State style */
+
+.switch.is-valid,
+.validate .switch:valid {
+  --tglbg: var(--fallback-su,oklch(var(--su)/1));
+}
+
+.switch.is-valid:focus-visible, .validate .switch:valid:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3)) !important;
+}
+
+.switch.is-valid:checked,
+  .switch.is-valid[checked="true"],
+  .switch.is-valid[aria-checked="true"],
+  .validate .switch:valid:checked,
+  .validate .switch:valid[checked="true"],
+  .validate .switch:valid[aria-checked="true"] {
+    --tglbg: var(--fallback-su,oklch(var(--su)/1));
+  }
+
+.switch.is-invalid,
+.validate .switch:invalid {
+  --tglbg: var(--fallback-er,oklch(var(--er)/1));
+}
+
+.switch.is-invalid:focus-visible, .validate .switch:invalid:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3)) !important;
+}
+
+.switch.is-invalid:checked,
+  .switch.is-invalid[checked="true"],
+  .switch.is-invalid[aria-checked="true"],
+  .validate .switch:invalid:checked,
+  .validate .switch:invalid[checked="true"],
+  .validate .switch:invalid[aria-checked="true"] {
+    --tglbg: var(--fallback-er,oklch(var(--er)/1));
+  }
+
+/* Label state */
+
+/* When using JS for form validation */
+
+/* Top text */
+
+.validate .label:has(+ * .switch:valid) > *, 
+.validate .label-text:has(+ * .switch:valid), 
+.validate .label-text:has(~ .switch:valid), 
+.validate .label:has(~ .switch:valid) > *, 
+
+
+.validate .switch:valid ~ .label, 
+.validate .switch:valid ~ .label-text, 
+.validate .switch:valid ~ .label .label-text,  
+.validate *:has(.switch:valid) ~ .label, 
+.validate *:has(.switch:valid) ~ .label-text, 
+.validate *:has(.switch:valid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+/* When using JS for form validation */
+
+/* Top text */
+
+.validate .label:has(+ * .switch:invalid) > *, 
+.validate .label-text:has(+ * .switch:invalid), 
+.validate .label-text:has(~ .switch:invalid), 
+.validate .label:has(~ .switch:invalid) > *, 
+
+.validate .switch:invalid ~ .label, 
+.validate .switch:invalid ~ .label-text, 
+.validate .switch:invalid ~ .label .label-text,  
+.validate *:has(.switch:invalid) ~ .label, 
+.validate *:has(.switch:invalid) ~ .label-text, 
+.validate *:has(.switch:invalid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+/* Helper text */
+
+/* .valid is a child class and when .message is parent. */
+
+.validate *:has(> .switch:valid) ~ .success-message,
+.validate *:has(> .switch:valid) > * > .success-message,
+
+.validate .switch:valid ~ .success-message,
+.validate .switch:valid + * > .success-message {
+  display: block;
+}
+
+/* Invalid message */
+
+.validate *:has(> .switch:invalid) ~ .error-message,
+.validate *:has(> .switch:invalid) > * > .error-message,
+
+.validate .switch:invalid ~ .error-message,
+.validate .switch:invalid + * > .error-message {
+  display: block;
+}
+
+/* Outline */
+
+.switch-outline.is-valid,
+.validate .switch-outline:valid {
+  --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+}
+
+.switch-outline.is-valid:checked,
+  .switch-outline.is-valid[checked="true"],
+  .switch-outline.is-valid[aria-checked="true"],
+  .validate .switch-outline:valid:checked,
+  .validate .switch-outline:valid[checked="true"],
+  .validate .switch-outline:valid[aria-checked="true"] {
+    --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+  }
+
+.switch-outline.is-invalid,
+.validate .switch-outline:invalid {
+  --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+}
+
+.switch-outline.is-invalid:checked,
+  .switch-outline.is-invalid[checked="true"],
+  .switch-outline.is-invalid[aria-checked="true"],
+  .validate .switch-outline:invalid:checked,
+  .validate .switch-outline:invalid[checked="true"],
+  .validate .switch-outline:invalid[aria-checked="true"] {
+    --tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+  }
+
+/* Label state */
+
+/* When using JS for form validation */
+
+/* Top text */
+
+.validate .label:has(+ * .switch-outline:valid) > *, 
+.validate .label-text:has(+ * .switch-outline:valid), 
+.validate .label-text:has(~ .switch-outline:valid), 
+.validate .label:has(~ .switch-outline:valid) > *, 
+
+
+.validate .switch-outline:valid ~ .label, 
+.validate .switch-outline:valid ~ .label-text, 
+.validate .switch-outline:valid ~ .label .label-text,  
+.validate *:has(.switch-outline:valid) ~ .label, 
+.validate *:has(.switch-outline:valid) ~ .label-text, 
+.validate *:has(.switch-outline:valid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+/* When using JS for form validation */
+
+/* Top text */
+
+.validate .label:has(+ * .switch-outline:invalid) > *, 
+.validate .label-text:has(+ * .switch-outline:invalid), 
+.validate .label-text:has(~ .switch-outline:invalid), 
+.validate .label:has(~ .switch-outline:invalid) > *, 
+
+.validate .switch-outline:invalid ~ .label, 
+.validate .switch-outline:invalid ~ .label-text, 
+.validate .switch-outline:invalid ~ .label .label-text,  
+.validate *:has(.switch-outline:invalid) ~ .label, 
+.validate *:has(.switch-outline:invalid) ~ .label-text, 
+.validate *:has(.switch-outline:invalid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+/* Helper text */
+
+/* main style is in switch.css  */
+
+.validate *:has(> .switch-outline:valid) ~ .success-message,
+.validate *:has(> .switch-outline:valid) > * > .success-message,
+
+.validate .switch-outline:valid ~ .success-message,
+.validate .switch-outline:valid + * > .success-message {
+  display: block;
+}
+
+.validate *:has(> .switch-outline:invalid) ~ .error-message,
+.validate *:has(> .switch-outline:invalid) > * > .error-message,
+
+.validate .switch-outline:invalid ~ .error-message,
+.validate .switch-outline:invalid + * > .error-message {
+  display: block;
+}

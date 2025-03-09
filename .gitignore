@@ -9,7 +9,7 @@ pnpm-lock.yaml
 
 
 #output Folder
-/dist
+# /dist
 /colors
 /index.js
 /coverage

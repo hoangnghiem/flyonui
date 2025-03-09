@@ -1,0 +1,22 @@
+.tooltip {
+    display: inline-block;
+    text-align: center
+}
+
+  .tooltip-content {
+    visibility: hidden;
+    position: absolute;
+    display: inline-block;
+    padding: 0.5rem;
+    opacity: 0;
+    width: max-content;
+    z-index: 20
+}
+
+  .tooltip-body {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    line-height: 1.25rem
+}

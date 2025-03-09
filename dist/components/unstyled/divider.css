@@ -1,0 +1,62 @@
+.divider {
+
+    display: flex;
+
+    width: 100%;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    align-self: stretch;
+
+    font-size: 0.875rem;
+
+    line-height: 1.25rem
+}
+
+.divider::before {
+
+    height: 1px;
+
+    width: 100%;
+
+    flex-grow: 1;
+
+    border-top-width: 1px;
+
+    --tw-content: '';
+
+    content: var(--tw-content)
+}
+
+.divider::after {
+
+    display: flex;
+
+    height: 1px;
+
+    width: 100%;
+
+    flex-grow: 1;
+
+    border-top-width: 1px;
+
+    --tw-content: '';
+
+    content: var(--tw-content)
+}
+
+  .divider-start::before {
+
+    content: var(--tw-content);
+
+    display: none
+}
+
+  .divider-end::after {
+
+    content: var(--tw-content);
+
+    display: none
+}

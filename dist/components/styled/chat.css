@@ -1,0 +1,25 @@
+.chat-bubble {
+    border-radius: var(--rounded-box, 0.5rem);
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+}
+  .chat-receiver .chat-bubble {
+    border-end-start-radius: 0px;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+  .chat-receiver .chat-bubble:before {
+      inset-inline-start: -0.749rem;
+    }
+  .chat-sender .chat-bubble {
+    border-end-end-radius: 0px;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity, 1)));
+}
+  .chat-sender .chat-bubble:before {
+      inset-inline-start: 99.9%;
+    }

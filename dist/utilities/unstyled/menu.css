@@ -1,0 +1,14 @@
+.menu-horizontal {
+    display: inline-flex;
+    flex-direction: row
+}
+  .menu-horizontal > li:not(.menu-title) > .collapse > ul {
+    position: absolute
+}
+.menu-vertical {
+    display: flex;
+    flex-direction: column
+}
+.menu-vertical > li:not(.menu-title) > .collapse > ul {
+    position: relative
+}

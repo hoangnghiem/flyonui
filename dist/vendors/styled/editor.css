@@ -1,0 +1,276 @@
+/* Toolbar buttons styling */
+.ce-toolbar__plus,
+.ce-toolbar__settings-btn {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+.ce-toolbar__plus:hover,
+.ce-toolbar__settings-btn:hover {
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.05));
+}
+/* Popover and conversion toolbar styling */
+.ce-popover,
+.ce-conversion-toolbar,
+.tc-popover {
+  border-radius: var(--rounded-box, 0.5rem) !important;
+  border-width: 0px !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1))) !important;
+  --tw-shadow: 0 2px 4px 0 var(--fallback-bs,oklch(var(--bs)/0.26)) !important;
+  --tw-shadow-colored: 0 2px 4px 0 var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+/* Inline toolbar styling */
+.ce-inline-toolbar {
+  border-radius: var(--rounded-box, 0.5rem);
+  border-width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  --tw-shadow: 0 2px 4px 0 var(--fallback-bs,oklch(var(--bs)/0.26));
+  --tw-shadow-colored: 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+/* Search field styling */
+.cdx-search-field {
+  border-radius: var(--rounded-box, 0.5rem);
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+  background-color: var(--fallback-b2,oklch(var(--b2)/0.4));
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+/* Popover and conversion tool item styling */
+.ce-popover-item,
+.ce-conversion-tool,
+.tc-toolbox__toggler,
+.tc-toolbox__toggler:hover {
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1))) !important;
+}
+/* Secondary title and label styling */
+.ce-popover-item__secondary-title,
+.ce-conversion-tool__secondary-label {
+  margin-left: 0px;
+  margin-inline-start: auto;
+  color: var(--fallback-bc,oklch(var(--bc)/0.8));
+}
+/* Popover and conversion tool icon styling */
+.ce-popover-item__icon,
+.ce-conversion-tool__icon,
+.tc-popover__item-icon {
+  margin-inline-end: 0.625rem !important;
+  border-radius: var(--rounded-box, 0.5rem) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1))) !important;
+}
+.ce-popover-item__icon:where([dir="rtl"], [dir="rtl"] *),
+.ce-conversion-tool__icon:where([dir="rtl"], [dir="rtl"] *),
+.tc-popover__item-icon:where([dir="rtl"], [dir="rtl"] *) {
+  margin-right: 0px !important;
+}
+.ce-popover-item__icon,
+.ce-conversion-tool__icon,
+.tc-popover__item-icon {
+  box-shadow: 0 0 0 1.35px var(--fallback-bc,oklch(var(--bc)/0.25)) !important;
+}
+.tc-popover__item-icon {
+  border-width: 0px !important;
+}
+.tc-popover__item {
+  padding-inline-end: 0.875rem !important;
+  padding-inline-start: 0.125rem !important;
+}
+/* Popover scrollbar styling */
+.ce-popover__items::-webkit-scrollbar-thumb {
+  background-color: var(--fallback-s,oklch(var(--s)/0.5));
+}
+.ce-popover__items::-webkit-scrollbar-thumb:hover {
+  background-color: var(--fallback-s,oklch(var(--s)/0.8));
+}
+.ce-popover__items::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+}
+.ce-popover__items::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Conversion toolbar label styling */
+.ce-conversion-toolbar__label {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+/* Inline toolbar dropdown styling */
+.ce-inline-toolbar__dropdown {
+  margin-inline-end: 0.625rem;
+  margin-inline-start: 0px;
+  border-start-start-radius: var(--rounded-box, 0.5rem);
+  border-end-start-radius: var(--rounded-box, 0.5rem);
+  border-inline-end-width: 1px;
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+.ce-inline-toolbar__dropdown:where([dir="rtl"], [dir="rtl"] *) {
+  border-right-width: 0px;
+}
+.ce-inline-toolbar__toggler-and-button-wrapper:has(> .ce-inline-toolbar__dropdown) {
+  padding-inline-start: 0px;
+}
+/* Focused conversion tool styling */
+.ce-conversion-tool--focused {
+  background-color: var(--fallback-b3,oklch(var(--b3)/0.8)) !important;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+/* Inline tool padding */
+.ce-inline-tool {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+/* Last conversion tool rounded corners */
+.ce-conversion-tool:last-of-type {
+  border-bottom-right-radius: var(--rounded-box, 0.5rem);
+  border-bottom-left-radius: var(--rounded-box, 0.5rem);
+}
+/* Text and block Selection  */
+.ce-block--selected .ce-block__content {
+  background-color: var(--fallback-p,oklch(var(--p)/0.2));
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
+}
+.ce-block__content {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+.ce-block__content *::selection {
+  background-color: var(--fallback-p,oklch(var(--p)/0.2));
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
+}
+.ce-block__content::selection {
+  background-color: var(--fallback-p,oklch(var(--p)/0.2));
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
+}
+/* Codex editor margin */
+.codex-editor {
+  margin-left: 3.25rem;
+  margin-right: 3.25rem;
+}
+/* Toolbar actions padding */
+.ce-toolbar__actions {
+  padding-inline-end: 0.375rem;
+}
+/* Media query for narrow editor toolbar actions placement */
+@media (min-width: 651px) {
+    .codex-editor--narrow .ce-toolbar__actions {
+    inset-inline-end: 100%;
+  }
+    .codex-editor--narrow .ce-toolbox .ce-popover,
+    .codex-editor--narrow .ce-settings .ce-popover {
+    inset-inline-end: auto;
+    inset-inline-start: 0px;
+  }
+  .codex-editor--narrow .codex-editor__redactor {
+    margin-right: 0px !important;
+  }
+
+    [dir="rtl"] .codex-editor--narrow .codex-editor__redactor {
+      margin-right: 40px !important;
+    }
+}
+/* Checkbox */
+.cdx-checklist__item-checkbox,
+.cdx-nested-list__item::before {
+  margin-inline-end: 0.375rem;
+}
+/* Table */
+.tc-add-column,
+.tc-add-row {
+  --tw-text-opacity: 1 !important;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1))) !important;
+}
+.tc-cell,
+.tc-row,
+.tc-add-column,
+.tc-add-row,
+.tc-table,
+.tc-row:after {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.2)) !important;
+}
+.tc-cell {
+  border-inline-end-width: 1px;
+}
+.tc-cell:where([dir="rtl"], [dir="rtl"] *) {
+  border-right-width: 0px;
+}
+[dir="rtl"] .tc-add-row:before,
+[dir="rtl"] .tc-row:after {
+  left: calc(var(--cell-size) * -1);
+  right: auto;
+}
+[dir="rtl"] .tc-table:after {
+  left: auto;
+  right: calc(var(--cell-size) * -1);
+}
+.tc-cell--selected {
+  background-color: var(--fallback-b2,oklch(var(--b2)/0.6)) !important;
+}
+/* Hover effect for various elements */
+@media (hover: hover) {
+  .ce-popover-item:hover:not(.ce-popover-item--no-hover),
+  .ce-popover-item--focused:not(.ce-popover-item--no-focus),
+  .ce-inline-toolbar__dropdown:hover,
+  .ce-inline-tool:hover,
+  .ce-conversion-tool:hover,
+  .tc-add-column:hover,
+  .tc-add-row:hover,
+  .tc-add-row:hover:before,
+  .tc-popover__item:hover {
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.05)) !important;
+  }
+}
+h1.ce-header {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+h2.ce-header {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+h3.ce-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+h4.ce-header {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+h5.ce-header {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+h6.ce-header {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}

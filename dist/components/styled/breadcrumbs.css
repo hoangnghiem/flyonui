@@ -1,0 +1,11 @@
+.breadcrumbs > ul .breadcrumbs-separator, .breadcrumbs > ol .breadcrumbs-separator {
+          color: var(--fallback-bc,oklch(var(--bc)/0.5));
+}
+    .breadcrumbs > ul > li > a:focus, .breadcrumbs > ol > li > a:focus {
+          outline: 2px solid transparent;
+          outline-offset: 2px;
+}
+    .breadcrumbs > ul > li > a:focus-visible, .breadcrumbs > ol > li > a:focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }

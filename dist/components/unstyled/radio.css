@@ -1,0 +1,4 @@
+.radio,
+.radio-inset {
+    flex-shrink: 0
+}

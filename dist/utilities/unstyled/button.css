@@ -1,0 +1,63 @@
+.btn-xs {
+    height: 1.5rem;
+    min-height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+  .btn-sm {
+    height: 1.875rem;
+    min-height: 1.875rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+  .btn-lg {
+    height: 2.875rem;
+    min-height: 2.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem
+}
+  .btn-wide {
+    width: 16rem
+}
+  .btn-block {
+    width: 100%
+}
+  .btn-square:where(.btn-xs) {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0px
+}
+  .btn-square:where(.btn-sm) {
+    height: 1.875rem;
+    width: 1.875rem;
+    padding: 0px
+}
+  .btn-square:where(.btn-lg) {
+    height: 2.875rem;
+    width: 2.875rem;
+    padding: 0px
+}
+  .btn-circle:where(.btn-xs) {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 9999px;
+    padding: 0px
+}
+  .btn-circle:where(.btn-sm) {
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 9999px;
+    padding: 0px
+}
+  .btn-circle:where(.btn-lg) {
+    height: 2.875rem;
+    width: 2.875rem;
+    border-radius: 9999px;
+    padding: 0px
+}

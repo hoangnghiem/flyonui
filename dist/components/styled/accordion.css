@@ -1,0 +1,128 @@
+.accordion-toggle {
+
+    width: 100%;
+
+    cursor: pointer;
+
+    padding-left: 1.25rem;
+
+    padding-right: 1.25rem;
+
+    padding-top: 1rem;
+
+    padding-bottom: 1rem;
+
+    font-size: 1.125rem;
+
+    line-height: 1.5rem;
+
+    font-weight: 500;
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}
+
+.accordion-toggle:disabled {
+
+    pointer-events: none;
+
+    opacity: 0.5
+}
+
+.accordion-shadow :where(.accordion-item) {
+
+    margin-top: 0.5rem;
+
+    margin-bottom: 0.5rem;
+
+    border-radius: var(--rounded-box, 0.5rem);
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+
+    --tw-shadow: 0 4px 6px -1px var(--fallback-bs,oklch(var(--bs)/0.2));
+
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color);
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.accordion-shadow :where(.accordion-item) .accordion-item:first-of-type {
+
+    margin-top: 0px
+}
+
+.accordion-shadow :where(.accordion-item) .accordion-item:last-of-type {
+
+    margin-bottom: 0px
+}
+
+.accordion-shadow :where(.accordion-item) > *:first-child {
+
+    border-top-left-radius: var(--rounded-box, 0.5rem);
+
+    border-top-right-radius: var(--rounded-box, 0.5rem)
+}
+
+.accordion-shadow :where(.accordion-item) > *:last-child {
+
+    border-bottom-right-radius: var(--rounded-box, 0.5rem);
+
+    border-bottom-left-radius: var(--rounded-box, 0.5rem)
+}
+
+.accordion:where(.accordion-bordered) > :not([hidden]) ~ :not([hidden]) {
+
+    --tw-divide-y-reverse: 0;
+
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.25))
+}
+
+.accordion:where(.accordion-bordered) {
+
+    border-radius: var(--rounded-box, 0.5rem);
+
+    border-width: 1px;
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.25));
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)))
+}
+
+/* Tree view space */
+
+.tree-view-space {
+
+    position: relative;
+
+    margin-inline-start: 1rem;
+
+    padding-inline-start: 1rem
+}
+
+.tree-view-space::before {
+
+    position: absolute;
+
+    inset-inline-start: 0px;
+
+    top: 0px;
+
+    margin-inline-start: -0.125rem;
+
+    height: 100%;
+
+    width: 0.125rem;
+
+    content: var(--tw-content);
+
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.4))
+}

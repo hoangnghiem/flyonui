@@ -1,0 +1,173 @@
+.text-bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-accent {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-neutral {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity, 1)))
+}
+  /* btn with state colors */
+  .text-bg-info {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-inc,oklch(var(--inc)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-success {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-suc,oklch(var(--suc)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-warning {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-wac,oklch(var(--wac)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-error {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-erc,oklch(var(--erc)/var(--tw-text-opacity, 1)))
+}
+  /* Soft state */
+  .text-bg-soft-primary {
+    background-color: var(--fallback-p,oklch(var(--p)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-secondary {
+    background-color: var(--fallback-s,oklch(var(--s)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-accent {
+    background-color: var(--fallback-a,oklch(var(--a)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-neutral {
+    background-color: var(--fallback-n,oklch(var(--n)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)))
+}
+  /* btn with state colors */
+  .text-bg-soft-info {
+    background-color: var(--fallback-in,oklch(var(--in)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-in,oklch(var(--in)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-success {
+    background-color: var(--fallback-su,oklch(var(--su)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-warning {
+    background-color: var(--fallback-wa,oklch(var(--wa)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-wa,oklch(var(--wa)/var(--tw-text-opacity, 1)))
+}
+  .text-bg-soft-error {
+    background-color: var(--fallback-er,oklch(var(--er)/0.2));
+    --tw-text-opacity: 1;
+    color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-primary {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-secondary {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-accent {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-a,oklch(var(--a)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-neutral {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)))
+}
+
+/* btn with state colors */
+
+.text-border-info {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-in,oklch(var(--in)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-success {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-warning {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-wa,oklch(var(--wa)/var(--tw-text-opacity, 1)))
+}
+
+.text-border-error {
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)))
+}

@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  align-items: flex-end
+}
+.tabs-lifted:has(.tab-content[class^="rounded-"]) .tab:first-child:not(.tab-active),
+  .tabs-lifted:has(.tab-content[class*=" rounded-"]) .tab:first-child:not(.tab-active) {
+  border-bottom-color: transparent
+}
+.tab {
+  position: relative;
+  display: inline-flex;
+  height: 2.375rem;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  --tab-padding: 1rem
+}

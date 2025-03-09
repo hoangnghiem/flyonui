@@ -1,0 +1,556 @@
+/* Radio */
+.radio {
+  --basebg: var(--fallback-b1,oklch(var(--b1)/1));
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+}
+.radio:focus {
+    box-shadow: none;
+  }
+.radio:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+  outline-color: var(--fallback-n,oklch(var(--n)/0.3));
+}
+.radio:checked,
+  .radio[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
+    background-image: none;
+    animation: radiomark var(--animation-input, 0.1s) ease-out;
+    box-shadow:
+      0 0 0 3px var(--basebg) inset,
+      0 0 0 3px var(--basebg) inset,
+      var(--tw-ring-offset-shadow),
+      var(--tw-ring-shadow);
+}
+.radio-primary:checked,
+    .radio-primary[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+}
+.radio-primary:checked:focus-visible, .radio-primary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-p,oklch(var(--p)/0.3));
+}
+.radio-secondary:checked,
+    .radio-secondary[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
+}
+.radio-secondary:checked:focus-visible, .radio-secondary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-s,oklch(var(--s)/0.3));
+}
+.radio-accent:checked,
+    .radio-accent[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity, 1)));
+}
+.radio-accent:checked:focus-visible, .radio-accent[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-a,oklch(var(--a)/0.3));
+}
+/* State color */
+.radio-info:checked,
+    .radio-info[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity, 1)));
+}
+.radio-info:checked:focus-visible, .radio-info[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-in,oklch(var(--in)/0.3));
+}
+.radio-success:checked,
+    .radio-success[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+}
+.radio-success:checked:focus-visible, .radio-success[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3));
+}
+.radio-warning:checked,
+    .radio-warning[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity, 1)));
+}
+.radio-warning:checked:focus-visible, .radio-warning[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-wa,oklch(var(--wa)/0.3));
+}
+.radio-error:checked,
+    .radio-error[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+}
+.radio-error:checked:focus-visible, .radio-error[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3));
+}
+/* Radio inset */
+.radio-inset {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+}
+.radio-inset:focus {
+    box-shadow: none;
+  }
+.radio-inset:focus-visible {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 0px;
+  outline-color: var(--fallback-n,oklch(var(--n)/0.3));
+}
+.radio-inset:checked,
+  .radio-inset[aria-checked="true"] {
+  border-width: 6px;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  --tw-shadow: 0 1px 2px 0 var(--fallback-bs,oklch(var(--bs)/0.22));
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background-image: none;
+    animation: radioinsetmark var(--animation-input, 0.15s) ease-out;
+}
+.radio-inset:checked.radio-xs, .radio-inset[aria-checked="true"].radio-xs {
+  border-width: 4px;
+}
+.radio-inset:checked.radio-sm, .radio-inset[aria-checked="true"].radio-sm {
+  border-width: 5px;
+}
+.radio-inset:checked.radio-lg, .radio-inset[aria-checked="true"].radio-lg {
+  border-width: 8px;
+}
+.radio-inset-primary:checked,
+    .radio-inset-primary[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-primary:checked:focus-visible, .radio-inset-primary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-p,oklch(var(--p)/0.3));
+}
+.radio-inset-secondary:checked,
+    .radio-inset-secondary[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-secondary:checked:focus-visible, .radio-inset-secondary[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-s,oklch(var(--s)/0.3));
+}
+.radio-inset-accent:checked,
+    .radio-inset-accent[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-accent:checked:focus-visible, .radio-inset-accent[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-a,oklch(var(--a)/0.3));
+}
+/* State color */
+.radio-inset-info:checked,
+    .radio-inset-info[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-info:checked:focus-visible, .radio-inset-info[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-in,oklch(var(--in)/0.3));
+}
+.radio-inset-success:checked,
+    .radio-inset-success[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-success:checked:focus-visible, .radio-inset-success[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3));
+}
+.radio-inset-warning:checked,
+    .radio-inset-warning[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-warning:checked:focus-visible, .radio-inset-warning[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-wa,oklch(var(--wa)/0.3));
+}
+.radio-inset-error:checked,
+    .radio-inset-error[aria-checked="true"] {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+}
+.radio-inset-error:checked:focus-visible, .radio-inset-error[aria-checked="true"]:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3));
+}
+/* disabled */
+.radio.disabled,
+  .radio:disabled,
+  .radio[disabled],
+  .radio-inset.disabled,
+  .radio-inset:disabled,
+  .radio-inset[disabled] {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.radio.disabled:hover, .radio:disabled:hover, .radio[disabled]:hover, .radio-inset.disabled:hover, .radio-inset:disabled:hover, .radio-inset[disabled]:hover {
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    }
+/* Radio  */
+@keyframes radiomark {
+  0% {
+    box-shadow:
+      0 0 0 9px var(--basebg) inset,
+      0 0 0 9px var(--basebg) inset;
+  }
+  50% {
+    box-shadow:
+      0 0 0 6px var(--basebg) inset,
+      0 0 0 6px var(--basebg) inset;
+  }
+  100% {
+    box-shadow:
+      0 0 0 3px var(--basebg) inset,
+      0 0 0 3px var(--basebg) inset;
+  }
+}
+/* backward compatibility */
+.radio-mark {
+  display: none;
+}
+/* for radio-inset */
+@keyframes radioinsetmark {
+  0% {
+    border-width: 2px;
+  }
+  50% {
+    border-width: 4px;
+  }
+  100% {
+    border-width: 6px;
+  }
+}
+/* backward compatibility */
+.radio-inset-mark {
+  display: none;
+}
+/* custom option */
+.custom-label-option,
+.custom-option {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--rounded-box, 0.5rem);
+  border-width: 1px;
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.25));
+  padding: 1rem;
+  text-align: center;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+.custom-label-option:hover, .custom-option:hover {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.4));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-color: var(--fallback-bc,oklch(var(--bc)/0.4));
+}
+.custom-label-option .label, .custom-option .label {
+  padding: 0px;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+.custom-label-option .label:first-of-type, .custom-option .label:first-of-type {
+  padding-bottom: 0.25rem;
+}
+.custom-label-option .label .label-text, .custom-option .label .label-text {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+.validate .custom-label-option:has(.radio:invalid),
+  .custom-label-option:has(.radio.is-invalid),
+  .validate .custom-option:has(.radio:invalid),
+  .custom-option:has(.radio.is-invalid) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+}
+.validate .custom-label-option:has(.radio:valid),
+  .custom-label-option:has(.radio.is-valid),
+  .validate .custom-option:has(.radio:valid),
+  .custom-option:has(.radio.is-valid) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+}
+.custom-option:has(:checked) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-p,oklch(var(--p)/var(--tw-ring-opacity, 1)));
+}
+.validate .custom-option:has(.radio:valid):has(:checked), .custom-option:has(.radio.is-valid):has(:checked) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-su,oklch(var(--su)/var(--tw-ring-opacity, 1)));
+}
+.custom-label-option {
+  background-color: var(--fallback-n,oklch(var(--n)/0.1));
+}
+.custom-label-option:has(:checked) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+  background-color: var(--fallback-p,oklch(var(--p)/0.2));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-p,oklch(var(--p)/var(--tw-ring-opacity, 1)));
+}
+.validate .custom-label-option:has(.radio:valid),
+  .custom-label-option:has(.radio.is-valid) {
+  background-color: var(--fallback-su,oklch(var(--su)/0.2));
+}
+.validate .custom-label-option:has(.radio:valid):has(:checked), .custom-label-option:has(.radio.is-valid):has(:checked) {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+  background-color: var(--fallback-su,oklch(var(--su)/0.2));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-su,oklch(var(--su)/var(--tw-ring-opacity, 1)));
+}
+.validate .custom-label-option:has(.radio:invalid),
+  .custom-label-option:has(.radio.is-invalid) {
+  background-color: var(--fallback-er,oklch(var(--er)/0.2));
+}
+/* State style */
+.radio.is-valid,
+.validate .radio:valid {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+}
+.radio.is-valid:hover,
+.validate .radio:valid:hover {
+  --tw-ring-color: var(--fallback-su,oklch(var(--su)/0.1)) !important;
+}
+@media(hover:hover) {
+  .radio.is-valid:hover,
+.validate .radio:valid:hover {
+    --tw-border-opacity: 1 !important;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+  }
+}
+.radio.is-valid:focus-visible, .validate .radio:valid:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3)) !important;
+}
+.radio.is-valid:checked,
+  .radio.is-valid[aria-checked="true"],
+  .validate .radio:valid:checked,
+  .validate .radio:valid[aria-checked="true"] {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1))) !important;
+}
+.radio.is-invalid,
+.validate .radio:invalid {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+}
+.radio.is-invalid:hover,
+.validate .radio:invalid:hover {
+  --tw-ring-color: var(--fallback-er,oklch(var(--er)/0.1)) !important;
+}
+@media(hover:hover) {
+  .radio.is-invalid:hover,
+.validate .radio:invalid:hover {
+    --tw-border-opacity: 1 !important;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+  }
+}
+.radio.is-invalid:focus-visible, .validate .radio:invalid:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3)) !important;
+}
+.radio.is-invalid:checked,
+  .radio.is-invalid[aria-checked="true"],
+  .validate .radio:invalid:checked,
+  .validate .radio:invalid[aria-checked="true"] {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1))) !important;
+}
+/* Label state */
+/* Top text */
+.validate .label:has(+ * .radio:valid) > *, 
+.validate .label-text:has(+ * .radio:valid), 
+.validate .label-text:has(~ .radio:valid), 
+.validate .label:has(~ .radio:valid) > *, 
+
+.validate .radio:valid ~ .label, 
+.validate .radio:valid ~ .label-text, 
+.validate .radio:valid ~ .label .label-text,  
+.validate *:has(.radio:valid) ~ .label, 
+.validate *:has(.radio:valid) ~ .label-text, 
+.validate *:has(.radio:valid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+/* Invalid text style */
+/* Top text */
+.validate .label:has(+ * .radio:invalid) > *, 
+.validate .label-text:has(+ * .radio:invalid), 
+.validate .label-text:has(~ .radio:invalid), 
+.validate .label:has(~ .radio:invalid) > *, 
+
+.validate .radio:invalid ~ .label, 
+.validate .radio:invalid ~ .label-text, 
+.validate .radio:invalid ~ .label .label-text,  
+.validate *:has(.radio:invalid) ~ .label, 
+.validate *:has(.radio:invalid) ~ .label-text, 
+.validate *:has(.radio:invalid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+/* Helper text */
+/* Valid message display */
+.validate *:has(> .radio:valid) ~ .success-message,
+.validate *:has(> .radio:valid) > * > .success-message,
+
+.validate .radio:valid ~ .success-message,
+.validate .radio:valid + * > .success-message {
+  display: block;
+}
+/* Invalid message display */
+.validate *:has(> .radio:invalid) ~ .error-message,
+.validate *:has(> .radio:invalid) > * > .error-message,
+
+.validate .radio:invalid ~ .error-message,
+.validate .radio:invalid + * > .error-message {
+  display: block;
+}
+/* Inset Radio */
+.radio-inset.is-valid,
+.validate .radio-inset:valid {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+}
+.radio-inset.is-valid:hover,
+.validate .radio-inset:valid:hover {
+  --tw-ring-color: var(--fallback-su,oklch(var(--su)/0.1)) !important;
+}
+@media(hover:hover) {
+  .radio-inset.is-valid:hover,
+.validate .radio-inset:valid:hover {
+    --tw-border-opacity: 1 !important;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+  }
+}
+.radio-inset.is-valid:focus-visible, .validate .radio-inset:valid:focus-visible {
+  outline-color: var(--fallback-su,oklch(var(--su)/0.3)) !important;
+}
+.radio-inset.is-valid:checked,
+  .radio-inset.is-valid[aria-checked="true"],
+  .validate .radio-inset:valid:checked,
+  .validate .radio-inset:valid[aria-checked="true"] {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1))) !important;
+}
+.radio-inset.is-invalid,
+.validate .radio-inset:invalid {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+}
+.radio-inset.is-invalid:hover,
+.validate .radio-inset:invalid:hover {
+  --tw-ring-color: var(--fallback-er,oklch(var(--er)/0.1)) !important;
+}
+@media(hover:hover) {
+  .radio-inset.is-invalid:hover,
+.validate .radio-inset:invalid:hover {
+    --tw-border-opacity: 1 !important;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+  }
+}
+.radio-inset.is-invalid:focus-visible, .validate .radio-inset:invalid:focus-visible {
+  outline-color: var(--fallback-er,oklch(var(--er)/0.3)) !important;
+}
+.radio-inset.is-invalid:checked,
+  .radio-inset.is-invalid[aria-checked="true"],
+  .validate .radio-inset:invalid:checked,
+  .validate .radio-inset:invalid[aria-checked="true"] {
+  --tw-border-opacity: 1 !important;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1))) !important;
+}
+/* Label state */
+/* Top text */
+.validate .label:has(+ * .radio-inset:valid) > *, 
+.validate .label:has(+ * .radio-inset:valid).label-text, 
+.validate .label:has(~ .radio-inset:valid).label-text, 
+.validate .label:has(~ .radio-inset:valid) > *, 
+
+.validate .radio-inset:valid ~ .label, 
+.validate .radio-inset:valid ~ .label.label-text, 
+.validate .radio-inset:valid ~ .label .label-text,  
+.validate *:has(.radio-inset:valid) ~ .label, 
+.validate *:has(.radio-inset:valid) ~ .label.label-text, 
+.validate *:has(.radio-inset:valid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+/* Top text */
+.validate .label:has(+ * .radio-inset:invalid) > *, 
+.validate .label-text:has(+ * .radio-inset:invalid), 
+.validate .label-text:has(~ .radio-inset:invalid), 
+.validate .label:has(~ .radio-inset:invalid) > *, 
+
+.validate .radio-inset:invalid ~ .label, 
+.validate .radio-inset:invalid ~ .label-text, 
+.validate .radio-inset:invalid ~ .label .label-text,  
+.validate *:has(.radio-inset:invalid) ~ .label, 
+.validate *:has(.radio-inset:invalid) ~ .label-text, 
+.validate *:has(.radio-inset:invalid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+/* Helper text */
+/* Valid message display */
+.validate *:has(> .radio-inset:valid) ~ .success-message,
+.validate *:has(> .radio-inset:valid) > * > .success-message,
+
+.validate .radio-inset:valid ~ .success-message,
+.validate .radio-inset:valid + * > .success-message {
+  display: block;
+}
+/* Invalid message display */
+.validate *:has(> .radio-inset:invalid) ~ .error-message,
+.validate *:has(> .radio-inset:invalid) > * > .error-message,
+
+.validate .radio-inset:invalid ~ .error-message,
+.validate .radio-inset:invalid + * > .error-message {
+  display: block;
+}

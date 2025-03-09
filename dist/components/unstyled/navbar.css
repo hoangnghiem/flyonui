@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center
+}
+.navbar-start {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start
+}
+.navbar-center {
+    flex-shrink: 0
+}
+.navbar-end {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end
+}

@@ -1,0 +1,35 @@
+.divider-horizontal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    width: 1rem
+}
+.divider-vertical {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    width: auto
+}
+.divider-vertical::before {
+    height: 1px;
+    width: 100%;
+    flex-grow: 1;
+    border-inline-end-width: 0px;
+    border-top-width: 1px;
+    --tw-content: '';
+    content: var(--tw-content)
+}
+.divider-vertical::after {
+    display: flex;
+    height: 1px;
+    width: 100%;
+    flex-grow: 1;
+    border-inline-end-width: 0px;
+    border-top-width: 1px;
+    --tw-content: '';
+    content: var(--tw-content)
+}

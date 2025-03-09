@@ -1,0 +1,45 @@
+.tooltip-content {
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+  .tooltip-body {
+    --tooltip-color: var(--fallback-n,oklch(var(--n)/1));
+    --tooltip-text-color: var(--fallback-nc,oklch(var(--nc)/1));
+    border-radius: var(--rounded-tooltip, 0.25rem);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-shadow: 0 4px 6px -1px var(--fallback-bs,oklch(var(--bs)/0.2));
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background-color: var(--tooltip-color);
+    color: var(--tooltip-text-color);
+  }
+  .tooltip-primary {
+    --tooltip-color: var(--fallback-p,oklch(var(--p)/1));
+    --tooltip-text-color: var(--fallback-pc,oklch(var(--pc)/1));
+  }
+  .tooltip-secondary {
+    --tooltip-color: var(--fallback-s,oklch(var(--s)/1));
+    --tooltip-text-color: var(--fallback-sc,oklch(var(--sc)/1));
+  }
+  .tooltip-accent {
+    --tooltip-color: var(--fallback-a,oklch(var(--a)/1));
+    --tooltip-text-color: var(--fallback-ac,oklch(var(--ac)/1));
+  }
+  .tooltip-info {
+    --tooltip-color: var(--fallback-in,oklch(var(--in)/1));
+    --tooltip-text-color: var(--fallback-inc,oklch(var(--inc)/1));
+  }
+  .tooltip-success {
+    --tooltip-color: var(--fallback-su,oklch(var(--su)/1));
+    --tooltip-text-color: var(--fallback-suc,oklch(var(--suc)/1));
+  }
+  .tooltip-warning {
+    --tooltip-color: var(--fallback-wa,oklch(var(--wa)/1));
+    --tooltip-text-color: var(--fallback-wac,oklch(var(--wac)/1));
+  }
+  .tooltip-error {
+    --tooltip-color: var(--fallback-er,oklch(var(--er)/1));
+    --tooltip-text-color: var(--fallback-erc,oklch(var(--erc)/1));
+  }

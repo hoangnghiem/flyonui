@@ -1,0 +1,409 @@
+.select {
+  border-radius: var(--rounded-btn, 0.375rem);
+  border-width: 1px;
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.4));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: var(--fallback-bc,oklch(var(--bc)/0.8));
+}.select:hover {
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.6));
+}.select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'><path fill='none' stroke='%239293AE' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 9l6 6l6-6'/></svg>");
+  background-size: 1.3em;
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+}
+
+  .select:focus,
+  .select:focus-within {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+  --tw-shadow: 0 1px 2px 0 var(--fallback-bs,oklch(var(--bs)/0.22));
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: var(--fallback-p,oklch(var(--p)/0.22));
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-p,oklch(var(--p)/var(--tw-ring-opacity, 1)));
+}
+
+  .select:focus ~ .select-floating-label,
+    .select:focus ~ .select-filled-label,
+    .select:focus-within ~ .select-floating-label,
+    .select:focus-within ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)));
+}
+
+  .select:focus.is-valid ~ .select-floating-label,
+    .select:focus.is-valid ~ .select-filled-label,
+    .select:focus-within.is-valid ~ .select-floating-label,
+    .select:focus-within.is-valid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+  .select:focus.is-invalid ~ .select-floating-label,
+    .select:focus.is-invalid ~ .select-filled-label,
+    .select:focus-within.is-invalid ~ .select-floating-label,
+    .select:focus-within.is-invalid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+  .select-filled {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.6));
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.05));
+  padding-top: 0.625rem;
+}
+
+  .select-filled::placeholder {
+  color: transparent;
+}
+
+  .select-filled.input-sm {
+  padding-top: 0.375rem;
+}
+
+  .select-filled option {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+}
+
+  .select-filled:focus,
+    .select-filled:focus-within {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)));
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+  .select-filled:focus ~ .select-filled-focused,
+    .select-filled:focus-within ~ .select-filled-focused {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+}
+
+  .select:focus-visible {
+    outline: unset;
+  }
+
+  .select.disabled,
+  .select:disabled,
+  .select[disabled] {
+  pointer-events: none;
+  border-width: 0px;
+  border-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+  background-color: var(--fallback-n,oklch(var(--n)/0.1));
+  color: var(--fallback-bc,oklch(var(--bc)/0.5));
+}
+
+  .select.disabled::placeholder,
+  .select:disabled::placeholder,
+  .select[disabled]::placeholder {
+  color: var(--fallback-bc,oklch(var(--bc)/0.5));
+}
+
+  .select-multiple,
+  .select[multiple],
+  .select[size].select:not([size="1"]) {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+  .select-multiple::-webkit-scrollbar-thumb,
+  .select[multiple]::-webkit-scrollbar-thumb,
+  .select[size].select:not([size="1"])::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: var(--fallback-s,oklch(var(--s)/0.5));
+}
+
+  .select-multiple::-webkit-scrollbar-thumb:hover,
+  .select[multiple]::-webkit-scrollbar-thumb:hover,
+  .select[size].select:not([size="1"])::-webkit-scrollbar-thumb:hover {
+  background-color: var(--fallback-s,oklch(var(--s)/0.8));
+}
+
+  .select-multiple::-webkit-scrollbar-track,
+  .select[multiple]::-webkit-scrollbar-track,
+  .select[size].select:not([size="1"])::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+}
+
+  .select-multiple::-webkit-scrollbar,
+  .select[multiple]::-webkit-scrollbar,
+  .select[size].select:not([size="1"])::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+  .select-multiple,
+  .select[multiple],
+  .select[size].select:not([size="1"]) {
+    background-image: none;
+  }
+
+.select.select-floating.disabled,
+    .select.select-floating:disabled,
+    .select.select-floating[disabled] {
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+}
+
+.select.select-floating.disabled ~ .select-floating-label, .select.select-floating:disabled ~ .select-floating-label, .select.select-floating[disabled] ~ .select-floating-label {
+  color: var(--fallback-bc,oklch(var(--bc)/0.5));
+}
+
+.select.select-filled.disabled,
+    .select.select-filled:disabled,
+    .select.select-filled[disabled] {
+  border-bottom-width: 1px;
+}
+
+.select.select-filled.disabled ~ .select-filled-label, .select.select-filled:disabled ~ .select-filled-label, .select.select-filled[disabled] ~ .select-filled-label {
+  color: var(--fallback-bc,oklch(var(--bc)/0.5));
+}
+
+[dir="rtl"] .select {
+  background-position: calc(0% + 1.3em) center;
+}
+
+.select-floating-label {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--fallback-bc,oklch(var(--bc)/0.8));
+}
+
+.select.select-floating.select-lg ~ .select-floating-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.select-filled-label {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--fallback-bc,oklch(var(--bc)/0.8));
+}
+
+.select.select-filled.select-lg ~ .select-filled-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* select group */
+
+.input-group .select {
+  border-width: 0px;
+}
+
+.input-group .select:focus,
+    .input-group .select:focus-within {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+/* State style */
+
+.select.is-valid,
+.validate .select:valid {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+}
+
+.select.is-valid:focus,
+  .select.is-valid:focus-within,
+  .validate .select:valid:focus,
+  .validate .select:valid:focus-within {
+  --tw-shadow-color: var(--fallback-su,oklch(var(--su)/0.22));
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-su,oklch(var(--su)/var(--tw-ring-opacity, 1)));
+}
+
+.select.is-valid.select-filled:focus,
+  .select.is-valid.select-filled:focus-within,
+  .validate .select:valid.select-filled:focus,
+  .validate .select:valid.select-filled:focus-within {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)));
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.select.is-valid ~ .select-floating-label,
+  .select.is-valid ~ .select-filled-label,
+  .validate .select:valid ~ .select-floating-label,
+  .validate .select:valid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+.select.is-valid:focus ~ .select-filled-focused,
+  .select.is-valid:focus-within ~ .select-filled-focused,
+  .validate .select:valid:focus ~ .select-filled-focused,
+  .validate .select:valid:focus-within ~ .select-filled-focused {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+}
+
+.select:focus.is-valid ~ .select-floating-label,
+.validate .select:focus:valid ~ .select-floating-label,
+.select:focus.is-valid ~ .select-filled-label,
+.validate .select:focus:valid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+.select:focus.is-invalid ~ .select-floating-label,
+.validate .select:focus:invalid ~ .select-floating-label,
+.select:focus.is-invalid ~ .select-filled-label,
+.validate .select:focus:invalid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+.select.is-invalid,
+.validate .select:invalid {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+}
+
+.select.is-invalid:focus,
+  .select.is-invalid:focus-within,
+  .validate .select:invalid:focus,
+  .validate .select:invalid:focus-within {
+  --tw-shadow-color: var(--fallback-er,oklch(var(--er)/0.22));
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--fallback-er,oklch(var(--er)/var(--tw-ring-opacity, 1)));
+}
+
+.select.is-invalid.select-filled:focus,
+  .select.is-invalid.select-filled:focus-within,
+  .validate .select:invalid.select-filled:focus,
+  .validate .select:invalid.select-filled:focus-within {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)));
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.select.is-invalid ~ .select-floating-label,
+  .select.is-invalid ~ .select-filled-label,
+  .validate .select:invalid ~ .select-floating-label,
+  .validate .select:invalid ~ .select-filled-label {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+.select.is-invalid:focus ~ .select-filled-focused,
+  .select.is-invalid:focus-within ~ .select-filled-focused,
+  .validate .select:invalid:focus ~ .select-filled-focused,
+  .validate .select:invalid:focus-within ~ .select-filled-focused {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+}
+
+/* Label state */
+
+/* Top text */
+
+.validate .label:has(+ * .select:valid) > *, 
+.validate .label-text:has(+ * .select:valid), 
+.validate .label-text:has(~ .select:valid).label-text, 
+.validate .label:has(~ .select:valid) > *, 
+
+.validate .select:valid ~ .label, 
+.validate .select:valid ~ .label-text, 
+.validate .select:valid ~ .label .label-text,  
+.validate *:has(.select:valid) ~ .label, 
+.validate *:has(.select:valid) ~ .label-text, 
+.validate *:has(.select:valid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)));
+}
+
+/* Invalid text style */
+
+/* Top text */
+
+.validate .label:has(+ * .select:invalid) > *, 
+.validate .label-text:has(+ * .select:invalid), 
+.validate .label-text:has(~ .select:invalid), 
+.validate .label:has(~ .select:invalid) > *, 
+
+.validate .select:invalid ~ .label, 
+.validate .select:invalid ~ .label-text, 
+.validate .select:invalid ~ .label .label-text,  
+.validate *:has(.select:invalid) ~ .label, 
+.validate *:has(.select:invalid) ~ .label-text, 
+.validate *:has(.select:invalid) ~ .label .label-text {
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+}
+
+/* Helper text */
+
+/* Valid message display */
+
+.validate *:has(> .select:valid) ~ .success-message,
+.validate *:has(> .select:valid) > * > .success-message,
+
+.validate .select:valid ~ .success-message,
+.validate .select:valid + * > .success-message {
+  display: block;
+}
+
+.validate *:has(> .select:invalid) ~ .error-message,
+.validate *:has(> .select:invalid) > * > .error-message,
+
+.validate .select:invalid ~ .error-message,
+.validate .select:invalid + * > .error-message {
+  display: block;
+}

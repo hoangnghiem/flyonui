@@ -1,0 +1,7 @@
+.range {
+    height: 0.5rem;
+    width: 100%;
+}
+  .range:focus {
+    outline: none;
+  }

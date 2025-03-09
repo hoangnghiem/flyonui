@@ -1,0 +1,56 @@
+.timeline {
+  position: relative;
+  display: flex
+}
+:where(.timeline > li) {
+  position: relative;
+  display: grid;
+  flex-shrink: 0;
+  align-items: center;
+  grid-template-rows: var(--timeline-row-start, minmax(0, 1fr)) auto var(--timeline-row-end, minmax(0, 1fr));
+  grid-template-columns: var(--timeline-col-start, minmax(0, 1fr)) auto var(--timeline-col-end, minmax(0, 1fr))
+}
+.timeline > li > hr {
+  width: 100%
+}
+:where(.timeline > li > hr):first-child {
+  grid-column-start: 1;
+  grid-row-start: 2
+}
+:where(.timeline > li > hr):last-child {
+  grid-column-start: 3;
+  grid-column-end: none;
+  grid-row-start: 2;
+  grid-row-end: auto
+}
+.timeline-start {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0.5rem
+}
+:where(.timeline-start) {
+  align-self: flex-end;
+  justify-self: center
+}
+.timeline-middle {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center
+}
+.timeline-end {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin: 0.5rem
+}
+:where(.timeline-end) {
+  align-self: flex-start;
+  justify-self: center
+}

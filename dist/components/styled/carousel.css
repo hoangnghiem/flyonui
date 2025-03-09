@@ -1,0 +1,31 @@
+.carousel-body,
+.carousel-slide {
+
+    transition-property: transform;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transition-duration: 700ms
+}
+
+.carousel-prev,
+.carousel-next {
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.8))
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}
+
+.carousel-prev.disabled,
+.carousel-next.disabled {
+
+    pointer-events: none;
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.3))
+}

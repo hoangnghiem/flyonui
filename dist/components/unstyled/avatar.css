@@ -1,0 +1,43 @@
+.avatar {
+    position: relative;
+    display: inline-flex;
+    font-size: 1rem;
+    line-height: 1.375rem
+}
+  .avatar > div {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden
+}
+  .avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+  .avatar.placeholder > div {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* Pull up avatar style */
+
+.pull-up .avatar {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1)
+}
+
+.pull-up .avatar:hover {
+    z-index: 30;
+    --tw-translate-y: -0.25rem;
+    --tw-scale-x: 1.02;
+    --tw-scale-y: 1.02;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    border-radius: 9999px;
+    --tw-shadow: 0 2px 4px 0 var(--fallback-bs,oklch(var(--bs)/0.26));
+    --tw-shadow-colored: 0 2px 4px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}

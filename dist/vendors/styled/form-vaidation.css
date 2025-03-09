@@ -1,0 +1,12 @@
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  --tw-text-opacity: 1;
+  color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)));
+  font-size: 0.875rem;
+}
+
+.fv-plugins-tailwindcss .invalid-feedback,
+.fv-plugins-tailwindcss .invalid-tooltip {
+  display: block;
+}

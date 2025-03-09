@@ -1,0 +1,164 @@
+.mockup-code {
+    min-width: 18rem;
+    border-radius: var(--rounded-box, 0.5rem);
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: var(--fallback-bc,oklch(var(--bc)/0.8));
+    direction: ltr;
+}
+    .mockup-code:before {
+      content: "";
+      margin-bottom: 1rem;
+      display: block;
+      height: 0.75rem;
+      width: 0.75rem;
+      border-radius: 9999px;
+      opacity: 0.3;
+      box-shadow:
+        1.4em 0,
+        2.8em 0,
+        4.2em 0;
+    }
+    .mockup-code pre {
+    padding-inline-end: 1.25rem;
+}
+    .mockup-code pre:before {
+        content: "";
+        margin-right: 2ch;
+      }
+    .mockup-code pre[data-prefix]:before {
+        content: attr(data-prefix);
+        width: 2rem;
+        opacity: 0.5;
+      }
+  .mockup-window {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: var(--rounded-box, 0.5rem);
+    padding-top: 1.25rem;
+}
+  .mockup-window:before {
+      content: "";
+      margin-bottom: 1rem;
+      display: block;
+      aspect-ratio: 1 / 1;
+      height: 0.75rem;
+      flex-shrink: 0;
+      align-self: flex-start;
+      border-radius: 9999px;
+      opacity: 0.3;
+    }
+  .mockup-window:where([dir="rtl"], [dir="rtl"] *):before {
+    align-self: flex-end;
+}
+  .mockup-window:before {
+      box-shadow:
+        1.4em 0,
+        2.8em 0,
+        4.2em 0;
+    }
+  .mockup-phone {
+    display: inline-block;
+    border: 4px solid #4e4d4d;
+    border-radius: 50px;
+    background-color: #000;
+    padding: 6px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .mockup-phone .camera {
+    border-radius: 9999px;
+      position: relative;
+      top: 1%;
+      left: 0px;
+      background: #000;
+      height: 25px;
+      width: 33%;
+      margin: 0 auto;
+      z-index: 11;
+}
+  .mockup-phone .camera:after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        right: 8%;
+        width: 12px;
+        height: 12px;
+        border-radius: 5px;
+        background-color: #2a292d;
+      }
+  .mockup-phone .display {
+      overflow: hidden;
+      border-radius: 40px;
+      margin-top: -25px;
+    }
+  .mockup-browser {
+    width: 100%;
+    border-radius: var(--rounded-box, 0.5rem);
+}
+  .mockup-browser .mockup-browser-toolbar {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    padding-inline-end: 1.4em;
+      direction: ltr;
+}
+  .mockup-browser .mockup-browser-toolbar:before {
+        content: "";
+        margin-inline-end: 4.8rem;
+        display: inline-block;
+        aspect-ratio: 1 / 1;
+        height: 0.75rem;
+        border-radius: 9999px;
+        opacity: 0.3;
+        box-shadow:
+          1.4em 0,
+          2.8em 0,
+          4.2em 0;
+      }
+  .mockup-browser .mockup-browser-toolbar .input {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 1.75rem;
+    width: 24rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-inline-start: 2rem;
+    padding-top: 0.125rem;
+}
+  .mockup-browser .mockup-browser-toolbar .input:before {
+          content: "";
+          position: absolute;
+          inset-inline-start: 0.5rem;
+          top: 50%;
+          aspect-ratio: 1 / 1;
+          height: 0.75rem;
+          --tw-translate-y: -50%;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          border-radius: 9999px;
+          border-width: 2px;
+          border-color: currentColor;
+          opacity: 0.6;
+        }
+  .mockup-browser .mockup-browser-toolbar .input:after {
+          content: "";
+          position: absolute;
+          inset-inline-start: 1.25rem;
+          top: 50%;
+          height: 0.5rem;
+          --tw-translate-y: 25%;
+          --tw-rotate: -45deg;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          border-radius: 9999px;
+          border-width: 1px;
+          border-color: currentColor;
+          opacity: 0.6;
+        }

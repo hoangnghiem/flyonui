@@ -1,0 +1,219 @@
+.alert {
+
+    border-radius: var(--rounded-box, 0.5rem);
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.8))
+}
+
+  .alert-neutral {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-primary {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-secondary {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-info {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-inc,oklch(var(--inc)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-success {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-suc,oklch(var(--suc)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-warning {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-wac,oklch(var(--wac)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-error {
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity, 1)));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-erc,oklch(var(--erc)/var(--tw-text-opacity, 1)))
+}
+
+  /* Soft Variant */
+
+  .alert-soft {
+
+    border-width: 1px;
+
+    border-color: currentColor
+}
+
+  .alert-soft.alert-primary {
+
+    background-color: var(--fallback-p,oklch(var(--p)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-secondary {
+
+    background-color: var(--fallback-s,oklch(var(--s)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-neutral {
+
+    background-color: var(--fallback-n,oklch(var(--n)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-info {
+
+    background-color: var(--fallback-in,oklch(var(--in)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-in,oklch(var(--in)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-success {
+
+    background-color: var(--fallback-su,oklch(var(--su)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-warning {
+
+    background-color: var(--fallback-wa,oklch(var(--wa)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-wa,oklch(var(--wa)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-soft.alert-error {
+
+    background-color: var(--fallback-er,oklch(var(--er)/0.2));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)))
+}
+
+  /* Outline Variant */
+
+  .alert-outline {
+
+    border-width: 1px;
+
+    border-color: currentColor;
+
+    background-color: transparent
+}
+
+  .alert-outline.alert-neutral {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-primary {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-secondary {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-info {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-in,oklch(var(--in)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-success {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-su,oklch(var(--su)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-warning {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-wa,oklch(var(--wa)/var(--tw-text-opacity, 1)))
+}
+
+  .alert-outline.alert-error {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity, 1)))
+}

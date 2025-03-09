@@ -1,0 +1,11 @@
+.radial-progress {
+  --value: 0;
+  --size: 5rem;
+  --thickness: calc(var(--size) / 10);
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+}
+.radial-progress:after {
+  background-color: currentColor;
+}

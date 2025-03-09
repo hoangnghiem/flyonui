@@ -1,0 +1,10 @@
+.tabs-bordered.tabs-vertical {
+    flex-direction: column
+}
+
+  .tabs-bordered.tabs-vertical > .tab {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom-width: 0px;
+    border-inline-end-width: calc(var(--tab-border, 1px) + 1px)
+}

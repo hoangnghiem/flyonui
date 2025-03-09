@@ -1,0 +1,30 @@
+.divider-horizontal {
+    flex-direction: column
+}
+.divider-horizontal::before {
+    height: 100%;
+    width: 1px;
+    border-inline-end-width: 1px;
+    content: var(--tw-content);
+    border-top-width: 0px
+}
+.divider-horizontal::after {
+    height: 100%;
+    width: 1px;
+    border-inline-end-width: 1px;
+    content: var(--tw-content);
+    border-top-width: 0px
+}
+.divider-vertical {
+    flex-direction: row
+}
+.divider-vertical::before {
+    height: 1px;
+    content: var(--tw-content);
+    width: 100%
+}
+.divider-vertical::after {
+    height: 1px;
+    content: var(--tw-content);
+    width: 100%
+}

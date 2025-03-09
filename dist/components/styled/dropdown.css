@@ -1,0 +1,110 @@
+.dropdown-menu > :not([hidden]) ~ :not([hidden]) {
+
+    --tw-space-y-reverse: 0;
+
+    margin-top: calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));
+
+    margin-bottom: calc(0.125rem * var(--tw-space-y-reverse))
+}
+
+.dropdown-menu {
+
+    border-radius: var(--rounded-box, 0.5rem);
+
+    --tw-bg-opacity: 1;
+
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
+
+    --tw-shadow: 0 10px 15px -2px var(--fallback-bs,oklch(var(--bs)/0.34));
+
+    --tw-shadow-colored: 0 10px 15px -2px var(--tw-shadow-color);
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.dropdown-item {
+
+    border-radius: var(--rounded-btn, 0.375rem);
+
+    background-color: transparent;
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+
+    text-decoration-line: none;
+
+    text-decoration-thickness: 0px
+}
+
+.dropdown-item:hover,
+  .dropdown-item:focus,
+  .dropdown-item:focus-within,
+  .dropdown-item:focus-visible {
+
+    background-color: var(--fallback-n,oklch(var(--n)/0.1));
+
+    outline: 2px solid transparent;
+
+    outline-offset: 2px
+}
+
+.dropdown-item.active,
+  .dropdown-item:active {
+
+    background-color: var(--fallback-p,oklch(var(--p)/0.1));
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+
+.dropdown-item.disabled,
+  .dropdown-item:disabled,
+  .dropdown-item[disabled] {
+
+    pointer-events: none;
+
+    background-color: var(--fallback-n,oklch(var(--n)/0.05));
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.5))
+}
+
+.dropdown-item > .label {
+
+    padding-top: 0.25rem;
+
+    padding-bottom: 0.25rem;
+
+    font-size: 1rem;
+
+    line-height: 1.375rem;
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.8))
+}
+
+.dropdown-item > .label-text {
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}
+
+.dropdown-header,
+.dropdown-footer {
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.8))
+}
+
+.dropdown-title {
+
+    font-size: 0.75rem;
+
+    line-height: 1rem;
+
+    font-weight: 500;
+
+    color: var(--fallback-bc,oklch(var(--bc)/0.5))
+}

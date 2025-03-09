@@ -1,0 +1,85 @@
+.advance-select-toggle {
+
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    cursor: pointer;
+
+    text-wrap: nowrap;
+
+    padding-left: 0.75rem;
+
+    padding-right: 0.75rem;
+
+    padding-top: 7px;
+
+    padding-bottom: 7px;
+
+    padding-inline-end: 2.25rem;
+
+    text-align: start
+}
+
+.advance-select-menu {
+
+    z-index: 10;
+
+    width: 100%
+}
+
+.advance-select-menu > :not([hidden]) ~ :not([hidden]) {
+
+    --tw-space-y-reverse: 0;
+
+    margin-top: calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));
+
+    margin-bottom: calc(0.125rem * var(--tw-space-y-reverse))
+}
+
+.advance-select-menu {
+
+    padding: 0.5rem
+}
+
+.advance-select-option {
+
+    width: 100%;
+
+    cursor: pointer;
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    padding-top: 0.625rem;
+
+    padding-bottom: 0.625rem
+}
+
+.advance-select-tag {
+
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    cursor: pointer;
+
+    text-wrap: nowrap;
+
+    padding-left: 0.25rem;
+
+    padding-right: 0.25rem;
+
+    padding-top: 0px;
+
+    padding-bottom: 0px;
+
+    padding-inline-end: 2.25rem;
+
+    text-align: start
+}

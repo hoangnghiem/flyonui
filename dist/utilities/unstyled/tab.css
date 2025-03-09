@@ -1,0 +1,18 @@
+.tabs-lg :where(.tab) {
+  height: 2.875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  --tab-padding: 1.25rem
+}
+.tabs-sm :where(.tab) {
+  height: 1.875rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tab-padding: 0.75rem
+}
+.tabs-xs :where(.tab) {
+  height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tab-padding: 0.5rem
+}

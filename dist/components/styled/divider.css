@@ -1,0 +1,201 @@
+.divider {
+
+    margin-top: 1rem;
+
+    margin-bottom: 1rem;
+
+    height: 1rem;
+
+    white-space: nowrap
+}
+
+.divider::before {
+
+    content: var(--tw-content);
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.2))
+}
+
+.divider::after {
+
+    content: var(--tw-content);
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.2))
+}
+
+  .divider:not(:empty) {
+
+    gap: 1rem
+}
+
+  .divider-neutral::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-neutral::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-primary::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-primary::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-secondary::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-secondary::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-accent::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-accent::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-info::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-info::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-success::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-success::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-warning::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-warning::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-error::before {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-error::after {
+
+    content: var(--tw-content);
+
+    --tw-border-opacity: 1;
+
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity, 1)))
+}
+
+  .divider-dotted::before {
+
+    content: var(--tw-content);
+
+    border-style: dotted
+}
+
+  .divider-dotted::after {
+
+    content: var(--tw-content);
+
+    border-style: dotted
+}
+
+  .divider-dashed::before {
+
+    content: var(--tw-content);
+
+    border-style: dashed
+}
+
+  .divider-dashed::after {
+
+    content: var(--tw-content);
+
+    border-style: dashed
+}

@@ -1,0 +1,89 @@
+.table {
+    border-radius: var(--rounded-box, 0.5rem);
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}.table:where([dir="rtl"], [dir="rtl"] *) {
+    text-align: right
+}.table {
+    overflow-y: auto;
+    overflow-x: hidden
+}.table::-webkit-scrollbar-thumb {
+    background-color: var(--fallback-s,oklch(var(--s)/0.5))
+}.table::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fallback-s,oklch(var(--s)/0.8))
+}.table::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)))
+}.table::-webkit-scrollbar {
+    width: 0.5rem
+}
+  .table :where(th, td) {
+    text-wrap: nowrap;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.375rem
+}
+  .table :where(th) {
+    text-wrap: nowrap;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
+    letter-spacing: 1px
+}
+  .table-xs :where(th, td) {
+    font-size: 0.75rem;
+    line-height: 1rem
+}
+  .table-sm :where(th, td), .table-md :where(th, td) {
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+  .table tr.active,
+  .table tr.active:nth-child(even),
+  .table-striped tbody tr:nth-child(even) {
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1))
+}
+  @media(hover:hover) {.table tr.hover:hover,
+  .table tr.hover:nth-child(even):hover {
+        background-color: var(--fallback-bc,oklch(var(--bc)/0.05))
+    }
+}
+  .table-striped tr.active,
+    .table-striped tr.active:nth-child(even),
+    .table-striped-striped tbody tr:nth-child(even) {
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1))
+}
+  @media(hover:hover) {.table-striped tr.hover,
+  .table-striped tr.hover:nth-child(even) {
+        background-color: var(--fallback-bc,oklch(var(--bc)/0.05))
+    }
+}
+  .table-striped-columns td:nth-child(even),
+  .table-striped-columns th:nth-child(even) {
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1))
+}
+  .table :where(thead, tbody) :where(tr:not(:last-child)),
+    .table :where(thead, tbody) :where(tr:first-child:last-child) {
+    border-bottom-width: 1px;
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.25))
+}
+  .table :where(thead, tfoot, th) {
+    white-space: nowrap;
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}
+  .table-borderless {
+    border-style: none
+}
+  .table-borderless :where(thead, tbody) :where(tr:not(:last-child)),
+      .table-borderless :where(thead, tbody) :where(tr:first-child:last-child) {
+    border-style: none
+}

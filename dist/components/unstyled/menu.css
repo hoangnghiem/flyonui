@@ -1,0 +1,33 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.125rem
+}
+  .menu :where(li ul) {
+    position: relative;
+    white-space: nowrap
+}
+  .menu :where(li:not(.menu-title) > *:not(ul, .collapse, .menu-title, .btn)) {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    grid-auto-columns: minmax(auto, max-content) auto max-content;
+    user-select: none
+}
+  .menu :where(li > .menu-dropdown:not(.menu-dropdown-show)) {
+    display: none
+}
+:where(.menu li) {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch
+}
+:where(.menu li) .badge {
+    justify-self: end
+}

@@ -1,0 +1,29 @@
+.select-xs {
+    height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+  .select-sm {
+    height: 1.875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem
+}
+  .select-lg {
+    height: 2.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem
+}
+
+.select-filled.select-sm {
+    height: 2.5rem
+}
+
+.select-filled.select-lg {
+    height: 3.5rem
+}

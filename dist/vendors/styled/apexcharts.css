@@ -1,0 +1,59 @@
+.apexcharts-tooltip-series-group.apexcharts-active {
+
+    padding-bottom: 0px !important
+}
+
+.apexcharts-tooltip.apexcharts-theme-light,
+.apexcharts-tooltip.apexcharts-theme-dark {
+
+    border-style: none !important;
+
+    --tw-bg-opacity: 1 !important;
+
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1))) !important;
+
+    --tw-shadow: 0 2px 4px 0 var(--fallback-bs,oklch(var(--bs)/0.26)) !important;
+
+    --tw-shadow-colored: 0 2px 4px 0 var(--tw-shadow-color) !important;
+
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+}
+
+.apexcharts-legend-text {
+
+    margin-left: 0px !important;
+
+    padding-left: 0px !important
+}
+
+.apexcharts-legend-marker {
+
+    top: 0px !important
+}
+
+.apexcharts-tooltip-title {
+
+    border-top-left-radius: 0.5rem;
+
+    border-top-right-radius: 0.5rem;
+
+    border-color: var(--fallback-bc,oklch(var(--bc)/0.4)) !important;
+
+    --tw-bg-opacity: 1 !important;
+
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1))) !important;
+
+    padding-left: 0.625rem !important;
+
+    padding-right: 0.625rem !important;
+
+    font-size: 0.875rem !important;
+
+    line-height: 1.25rem !important;
+
+    font-weight: 600 !important;
+
+    --tw-text-opacity: 1;
+
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}

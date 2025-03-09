@@ -1,0 +1,37 @@
+.link {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+  .link-hover {
+    text-decoration-line: none;
+}
+  @media(hover:hover) {
+    .link-hover:hover {
+        text-decoration-line: underline;
+    }
+}
+  .link-animated {
+    position: relative;
+    text-decoration-line: none;
+}
+  .link-animated::before {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0px;
+    inset-inline-start: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --tw-content: '';
+    content: var(--tw-content);
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+}
+  .link-animated:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+  }

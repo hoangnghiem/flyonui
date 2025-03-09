@@ -1,0 +1,41 @@
+.breadcrumbs {
+    max-width: 100%;
+    overflow-x: auto
+}
+  .breadcrumbs > ul,
+  .breadcrumbs > ol {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+    min-height: min-content
+}
+  .breadcrumbs > ul .breadcrumbs-separator, .breadcrumbs > ol .breadcrumbs-separator {
+    display: inline-flex;
+    width: 1.5rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center
+}
+  .breadcrumbs > ul > li, .breadcrumbs > ol > li {
+    display: inline-flex;
+    align-items: center;
+    line-height: 22px
+}
+  .breadcrumbs > ul > li > a, .breadcrumbs > ol > li > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem
+}
+  .breadcrumbs > ul > li > a:hover, .breadcrumbs > ol > li > a:hover {
+    --tw-text-opacity: 1;
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity, 1)))
+}
+  .breadcrumbs > ul > li:last-child, .breadcrumbs > ol > li:last-child {
+    cursor: text;
+    font-weight: 500;
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)))
+}
